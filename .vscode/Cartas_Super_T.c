@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 int main() {
-  // Declaração da estrutura da carta
   struct Carta {
     char estado;
     char codigoCarta[4];
@@ -12,10 +11,9 @@ int main() {
     int NmPontosTuristicos;
   };
 
-  // Criação de duas variáveis do tipo Carta
   struct Carta carta1, carta2;
 
-  // Informações da primeira carta
+ 
   carta1.estado = 'A';
   strcpy(carta1.codigoCarta, "A01");
   strcpy(carta1.nomeCidade, "Rio janeiro");
@@ -24,7 +22,7 @@ int main() {
   carta1.pib = 500000000;
   carta1.NmPontosTuristicos = 5;
 
-  // Informações da segunda carta
+  
   carta2.estado = 'B';
   strcpy(carta2.codigoCarta, "B02");
   strcpy(carta2.nomeCidade, "minas gerais");
@@ -33,7 +31,7 @@ int main() {
   carta2.pib = 350000000;
   carta2.NmPontosTuristicos = 3;
 
-  // Exibição dos dados das cartas
+ 
   printf("\n--- Cartas Cadastradas ---\n");
   printf("Carta 1:\n");
   printf("Estado: %c\n", carta1.estado);
